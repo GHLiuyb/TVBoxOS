@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://ghproxy.com/raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://8.210.232.168/xc.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
