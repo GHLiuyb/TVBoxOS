@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://8.210.232.168/xc.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/liuyb2019/xingxi/raw/master/xingxi.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
