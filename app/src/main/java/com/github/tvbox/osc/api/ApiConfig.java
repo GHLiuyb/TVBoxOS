@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://我不是.肥猫.love:63/接口禁止贩卖");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
